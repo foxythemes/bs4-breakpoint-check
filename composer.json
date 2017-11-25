@@ -1,0 +1,38 @@
+{
+    "name": "cakebake/jquery-breakpoint-check",
+    "description": "Check the current visibility of bootstrap 4 breakpoints",
+    "type": "component",
+    "keywords": [
+        "breakpoint",
+        "bootstrap",
+        "responsive",
+        "jquery",
+        "javascript"
+    ],
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jens A. (cakebake)",
+            "email": "cakebake.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "robloach/component-installer": "*"
+    },
+    "suggest": {
+        "components/jquery": "*",
+        "twbs/bootstrap": "~3.0.0"
+    },
+    "extra": {
+        "component": {
+            "scripts": [
+                "js/*.min.js"
+            ],
+            "files": [
+                "LICENSE",
+                "README.md"
+            ]
+        }
+    }
+}

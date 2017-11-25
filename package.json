@@ -1,0 +1,19 @@
+{
+  "name": "bs4-breakpoint-check",
+  "version": "1.0.5",
+  "description": "jQuery Bootstrap 4 Breakpoint Check",
+  "main": "js/jquery-breakpoint-check.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foxythemes/bs4-breakpoint-check.git"
+  },
+  "author": "Foxy Themes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/foxythemes/bs4-breakpoint-check/issues"
+  },
+  "homepage": "https://github.com/foxythemes/bs4-breakpoint-check#readme"
+}
