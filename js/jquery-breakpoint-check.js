@@ -1,13 +1,13 @@
 /*!
  * jQuery bootstrap 4 breakpoint check
- * Check the current visibility of bootstrap 3 breakpoints
+ * Check the current visibility of bootstrap 4 breakpoints
  *
  * @example `$.isXs()` function alias for `$.isBreakpoint("xs")`
  * @example `$.isSm()` function alias for `$.isBreakpoint("sm")`
  * @example `$.isMd()` function alias for `$.isBreakpoint("md")`
  * @example `$.isLg()` function alias for `$.isBreakpoint("lg")`
  * @example `$.isXl()` function alias for `$.isBreakpoint("xl")`
- * @version 1.0.0
+ * @version 1.1.0
  * @copyright Jens A. (cakebake) and other contributors
  * @license Released under the MIT license
  */
@@ -28,16 +28,16 @@
                 utilCls = "d-none d-sm-block";
                 break;
             case "sm":
-                utilCls = "d-none d-md-block";
+                utilCls = "d-sm-none d-md-block";
                 break;
             case "md":
-                utilCls = "d-none d-lg-block";
+                utilCls = "d-md-none d-lg-block";
                 break;
             case "lg":
-                utilCls = "d-none d-xl-block";
+                utilCls = "d-lg-none d-xl-block";
                 break;
             case "xl":
-                utilCls = "d-none";
+                utilCls = "d-xl-none";
                 break;
         }
 
