@@ -45,7 +45,7 @@
             "class": utilCls
         }).appendTo("body");
 
-        erg = element.is(":hidden");
+        erg = element.is(":visible");
         element.remove();
 
         return erg
