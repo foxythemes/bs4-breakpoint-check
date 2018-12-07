@@ -22,7 +22,7 @@
     },
     "suggest": {
         "components/jquery": "*",
-        "twbs/bootstrap": "~3.0.0"
+        "twbs/bootstrap": "~4.0.0"
     },
     "extra": {
         "component": {

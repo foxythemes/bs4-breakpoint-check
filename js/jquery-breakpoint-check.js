@@ -1,13 +1,13 @@
 /*!
  * jQuery bootstrap 4 breakpoint check
- * Check the current visibility of bootstrap 3 breakpoints
+ * Check the current visibility of bootstrap 4 breakpoints
  *
  * @example `$.isXs()` function alias for `$.isBreakpoint("xs")`
  * @example `$.isSm()` function alias for `$.isBreakpoint("sm")`
  * @example `$.isMd()` function alias for `$.isBreakpoint("md")`
  * @example `$.isLg()` function alias for `$.isBreakpoint("lg")`
  * @example `$.isXl()` function alias for `$.isBreakpoint("xl")`
- * @version 1.0.0
+ * @version 1.1.0
  * @copyright Jens A. (cakebake) and other contributors
  * @license Released under the MIT license
  */
@@ -25,19 +25,19 @@
 
         switch(breakPoint) {
             case "xs":
-                utilCls = "d-none d-sm-block";
+                utilCls = "d-block d-sm-none";
                 break;
             case "sm":
-                utilCls = "d-none d-md-block";
+                utilCls = "d-none d-sm-block d-md-none";
                 break;
             case "md":
-                utilCls = "d-none d-lg-block";
+                utilCls = "d-none d-md-block d-lg-none";
                 break;
             case "lg":
-                utilCls = "d-none d-xl-block";
+                utilCls = "d-none d-lg-block d-xl-none";
                 break;
             case "xl":
-                utilCls = "d-none";
+                utilCls = "d-none d-xl-block";
                 break;
         }
 
@@ -45,7 +45,7 @@
             "class": utilCls
         }).appendTo("body");
 
-        erg = element.is(":hidden");
+        erg = element.is(":visible");
         element.remove();
 
         return erg
