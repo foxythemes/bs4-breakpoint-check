@@ -1,6 +1,6 @@
 /*!
- * jQuery bootstrap 4 breakpoint check
- * Check the current visibility of bootstrap 4 breakpoints.
+ * jQuery bootstrap 5 breakpoint check
+ * Check the current visibility of bootstrap 5 breakpoints.
  *
  * Provides two sets of checks:
  *
@@ -11,6 +11,7 @@
  * @example `$.isMd()` function alias for `$.isBreakpoint("md")`
  * @example `$.isLg()` function alias for `$.isBreakpoint("lg")`
  * @example `$.isXl()` function alias for `$.isBreakpoint("xl")`
+ * @example `$.isXXl()` function alias for `$.isBreakpoint("xxl")`
  *
  * Within the min size for the breakpoint:
  *
@@ -19,7 +20,8 @@
  * @example `$.isMdUp()` function alias for `$.isBreakpointUp("md")`
  * @example `$.isLgUp()` function alias for `$.isBreakpointUp("lg")`
  * @example `$.isXlUp()` function alias for `$.isBreakpointUp("xl")`
- *
+ * @example `$.isXXlUp()` function alias for `$.isBreakpointUp("xxl")`
+
  * @version 1.2.0
  * @copyright Jens A. (cakebake) and other contributors
  * @license Released under the MIT license
@@ -72,7 +74,10 @@
                 utilCls = "d-none d-lg-block d-xl-none";
                 break;
             case "xl":
-                utilCls = "d-none d-xl-block";
+                utilCls = "d-none d-xl-block d-xxl-none";
+                break;
+            case "xxl":
+                utilCls = "d-none d-xxl-block";
                 break;
         }
 
@@ -101,6 +106,9 @@
                 break;
             case "xl":
                 utilCls = "d-none d-xl-block";
+                break;
+            case "xxl":
+                utilCls = "d-none d-xxl-block";
                 break;
         }
 
@@ -162,6 +170,16 @@
         },
 
         /**
+         * Check whether the current viewport width is larger than the "xxl" breakpoint.
+         * Shorthand function alias for $.isBreakpoint("xxl")
+         *
+         * @returns {boolean}
+         */
+        isXXl: function () {
+            return $.isBreakpoint("xxl")
+        },
+
+        /**
          * Check whether the current viewport with is within the "xs" breakpoint,
          * or larger. This is always true, because the "xs" breakpoint is just
          * min-width:0 and upwards.
@@ -207,14 +225,25 @@
         },
 
         /**
-         * Check whether the current viewport with is within the "lg" breakpoint,
+         * Check whether the current viewport with is within the "xl" breakpoint,
          * or larger.
-         * Shorthand function alias for $.isBreakpointUp("lg")
+         * Shorthand function alias for $.isBreakpointUp("xl")
          *
          * @return {boolean}
          */
         isXlUp: function () {
             return $.isBreakpointUp("xl");
+        },
+
+        /**
+         * Check whether the current viewport with is within the "xxl" breakpoint,
+         * or larger.
+         * Shorthand function alias for $.isBreakpointUp("xxl")
+         *
+         * @return {boolean}
+         */
+        isXXlUp: function () {
+            return $.isBreakpointUp("xxl");
         },
 
     });
